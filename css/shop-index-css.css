@@ -195,6 +195,8 @@ h3{
     content: " >"
 }
 
+/*cart*/
+
 .cart{
     height: 700px;
 }
@@ -267,11 +269,11 @@ div[class~=cart-textbarlist]::after{
 .item1{
     border: 1px black solid;
     background-color: white;
-    text-align: left;
+    text-align: center;
     margin-top: 1%;
     padding: 2px;
     padding-left: 6px;
-    height: 100px;
+    height: 90px;
     clear:both;
 }
 
@@ -279,29 +281,138 @@ div[class~=cart-textbarlist]::after{
     position: relative;
     float: left;
     width: 160px;
-    height: 100px;
+    height: 90px;
+    background-size: contain;
 }
 
 .item-name{
     float: left;
+    margin-left: 2%;
+    width: 30%;
+    text-align: left;
+}
+
+h2{
+    font-family:"HelveticaNeueBoldCondensed", "HelveticaNeue-Bold-Condensed", "Helvetica Neue Bold Condensed", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosCnBold', "Arial Narrow", "Arial", sans-serif; 
+    font-weight: 800;
+    font-stretch: condensed;
+    font: 22px/1 "Impact";
+    line-height: 44px;
 }
 
 .item-qtybox{
     float: left;
+    margin-left: 5%;
+    margin-top: 2.5%;
+    border: 1px black solid;
+    width: 8%;
+    height: 40%;
+    text-align: center;
+}
+
+.item-qty{
+    font-family:"HelveticaNeueBlackCondensed", "HelveticaNeue-Black-Condensed", "Helvetica Neue Black Condensed", "HelveticaNeueBlack", "HelveticaNeue-Black", "Helvetica Neue Black", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosCnBold', "Arial Narrow", "Arial", sans-serif; 
+    font-weight: 800;
+    font-stretch: condensed;
+    font: 22px/1 "Impact";
+    float: left;
+    line-height: 38px;
+    margin-left: 45%;
+
 }
 
 .item-price{
     float: left;
+    font-family:"HelveticaNeueBlackCondensed", "HelveticaNeue-Black-Condensed", "Helvetica Neue Black Condensed", "HelveticaNeueBlack", "HelveticaNeue-Black", "Helvetica Neue Black", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosCnBold', "Arial Narrow", "Arial", sans-serif; 
+    font-weight: 800;
+    font-stretch: condensed;
+    font: 22px/1 "Impact";
+    line-height: 90px;
+    margin-left: 11%;
+}
+
+.price::before{
+    content: "$ ";
 }
 
 .item-delete{
-    float: left;
+    float: right;
+    font-family:"HelveticaNeueBlackCondensed", "HelveticaNeue-Black-Condensed", "Helvetica Neue Black Condensed", "HelveticaNeueBlack", "HelveticaNeue-Black", "Helvetica Neue Black", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosCnBold', "Arial Narrow", "Arial", sans-serif; 
+    font-weight: 800;
+    font-stretch: condensed;
+    font: 22px/1 "Impact";
+    margin-right: 6%;
+    line-height: 90px;
 }
 
+.item-delete a{
+    text-decoration: none;
+}
+
+/*總價格條*/
+
+.itemtotal{
+    border-top: 1px black solid;
+    position: relative;
+    top: 48%;
+    display: block;
+    margin: 0 2%;
+    padding-top: 1%;
+}
+
+div[class~=subtotal]{
+    float: left;
+    font-family:"HelveticaNeueBlackCondensed", "HelveticaNeue-Black-Condensed", "Helvetica Neue Black Condensed", "HelveticaNeueBlack", "HelveticaNeue-Black", "Helvetica Neue Black", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosCnBold', "Arial Narrow", "Arial", sans-serif; 
+    font-weight: 800;
+    font-stretch: condensed;
+    font: 22px/1 "Impact";
+    margin-left: 48%;
+    line-height: 40px;
+    display: inline-block;
+}
+
+.totalqty{
+    float: left;
+    font-family:"HelveticaNeueBlackCondensed", "HelveticaNeue-Black-Condensed", "Helvetica Neue Black Condensed", "HelveticaNeueBlack", "HelveticaNeue-Black", "Helvetica Neue Black", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosCnBold', "Arial Narrow", "Arial", sans-serif; 
+    font-weight: 800;
+    font-stretch: condensed;
+    font: 20px/1 "Impact";
+    margin-left: 1%;
+    line-height: 40px;
+    display: inline-block;
+}
+
+div[class~=i]{
+    margin-left: 1%;
+}
+
+.subtotal::after{
+    content: " (";
+}
+
+div[class~=i]::after{
+    content: " )";
+}
+
+.totalprice{
+    float: left;
+    font-family:"HelveticaNeueBlackCondensed", "HelveticaNeue-Black-Condensed", "Helvetica Neue Black Condensed", "HelveticaNeueBlack", "HelveticaNeue-Black", "Helvetica Neue Black", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosCnBold', "Arial Narrow", "Arial", sans-serif; 
+    font-weight: 800;
+    font-stretch: condensed;
+    font: 22px/1 "Impact";
+    line-height: 40px;
+    margin-left: 6%;
+}
+
+div[class~=checkout]{
+    margin-left: 6%;
+}
+
+/*account*/
 .accountspace{
     position: relative;
     margin: 0 7%;
-    height: 380px;
+    height: 460px;
 }
 
 .footer{
